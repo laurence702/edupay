@@ -65,4 +65,10 @@ describe('LoginView Component', () => {
 
     cy.get('.v-messages__message').should('exist') // change the selector based on your error handling design
   })
+
+  it('should contain submit,register, and remember me', () => {
+    cy.get('[data-test="register-btn"]').contains('Register')
+    cy.get('[data-test="submit-btn"]').contains('Submit')
+    cy.get('[data-test="remember-checker"]').contains('Remember me')
+  })
 })

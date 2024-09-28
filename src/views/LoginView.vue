@@ -71,9 +71,17 @@ function Login() {
                 color="red"
                 label="Remember me"
                 hide-details
+                data-test="remember-checker"
               ></v-checkbox>
 
-              <v-btn variant="elevated" color="red-darken-1" class="mt-2" type="submit" block>
+              <v-btn
+                variant="elevated"
+                color="red-darken-1"
+                class="mt-2"
+                type="submit"
+                block
+                data-test="submit-btn"
+              >
                 <span>Submit</span>
               </v-btn>
             </v-form>
@@ -81,7 +89,7 @@ function Login() {
 
           <v-card-action>
             <div class="mx-4">
-              <v-btn to="/register" block>Register </v-btn>
+              <v-btn to="/register" block data-test="register-btn">Register </v-btn>
             </div>
           </v-card-action>
         </v-card>
