@@ -18,7 +18,14 @@ app.use(router)
 
 const vuetify = createVuetify({
   components,
-  directives
+  directives,
+  defaults: {
+    VBtn: { variant: 'outlined' },
+    VTextField: { variant: 'solo' }
+  },
+  theme: {
+    defaultTheme: 'dark'
+  }
 })
 
 app.use(vuetify).mount('#app')
