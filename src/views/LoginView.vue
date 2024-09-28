@@ -56,12 +56,14 @@ function Login() {
                 v-model="form.email"
                 :rules="[rules.required, rules.email]"
                 label="email"
+                data-test="email-input"
               ></v-text-field>
               <v-text-field
                 prepend-inner-icon="mdi-key"
                 v-model="form.password"
                 :rules="[rules.required]"
                 label="password"
+                data-test="password-input"
                 type="password"
               ></v-text-field>
               <v-checkbox

@@ -62,7 +62,7 @@ function changeTheme() {
         </v-list>
       </v-menu>
 
-      <v-btn to="/login" variant="outlined" text="Login"></v-btn>
+      <v-btn id="loginBtn" to="/login" variant="outlined" text="Login"></v-btn>
     </v-toolbar>
     <v-main>
       <v-fade-transition>
